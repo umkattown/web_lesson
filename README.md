@@ -1,2 +1,2 @@
-# web_first_day
+# web_lessons
 Создаем динамические веб сайты
