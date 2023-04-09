@@ -1,0 +1,82 @@
+<?php
+  echo "Hello world";
+?>
+
+
+<?php
+/* This is a section
+   of multi-line comments
+   which will not be
+   interpreted */
+?>
+
+
+<?php
+  $mycounter = 1;
+  $mystring  = "Hello";
+  $myarray   = array("One", "Two", "Three");
+?>
+
+<?php // test1.php
+  $username = "Fred Smith";
+  echo $username;
+  echo "<br>";
+  $current_user = $username;
+  echo $current_user;
+?>
+
+
+<?php
+  $oxo = array(array('x', ' ', 'o'),
+               array('o', 'o', 'x'),
+               array('x', 'o', ' '));
+  
+  echo $oxo[1][2];
+?> 
+
+
+
+<?php
+  $author = "Steve Ballmer";
+
+  echo "Developers, Developers, developers, developers, developers,
+  developers, developers, developers, developers!
+
+  - $author.";
+?>
+
+
+
+<?php
+  $author = "Bill Gates";
+
+  $text = "Measuring programming progress by lines of code is like
+  Measuring aircraft building progress by weight.
+
+  - $author.";
+?>
+
+
+<?php
+  $author = "Brian W. Kernighan";
+
+  echo <<<_END
+  Debugging is twice as hard as writing the code in the first place.
+  Therefore, if you write the code as cleverly as possible, you are,
+  by definition, not smart enough to debug it.
+  
+  - $author.
+_END;
+?>
+
+<?php
+  $author = "Scott Adams";
+
+  $out = <<<_END
+  Normal people believe that if it ain’t broke, don’t fix it.
+  Engineers believe that if it ain’t broke, it doesn’t have enough
+  features yet.
+
+  - $author.
+_END;
+?>

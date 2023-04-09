@@ -1,0 +1,80 @@
+<?php
+  $number = 12345 * 67890;
+  echo substr($number, 3, 1);
+?> 
+
+
+<?php
+  $pi     = "3.1415927";
+  $radius = 5;
+  echo $pi * ($radius * $radius);
+?> 
+
+
+<?php
+  function longdate($timestamp)
+  {
+    return date("l F jS Y", $timestamp);
+  }
+?> 
+
+<?php
+  function longdate($timestamp)
+  {
+    $temp = date("l F jS Y", $timestamp);
+    return "The date is $temp";
+  }
+?> 
+
+<?php
+  $temp = "The date is ";
+  echo longdate(time());
+
+  function longdate($timestamp)
+  {
+    return $temp . date("l F jS Y", $timestamp);
+  }
+?> 
+
+<?php
+  $temp = "The date is ";
+  echo $temp . longdate(time());
+
+  function longdate($timestamp)
+  {
+    return date("l F jS Y", $timestamp);
+  }
+?> 
+
+
+<?php
+  $temp = "The date is ";
+  echo longdate($temp, time());
+
+  function longdate($text, $timestamp)
+  {
+    return $text . date("l F jS Y", $timestamp);
+  }
+?>
+
+
+<?php
+
+  echo test();
+  echo "<br><br>";
+  echo test();
+    
+  function test()
+  {
+    static $count = 0;
+    echo $count;
+    $count++;
+  }
+?> 
+
+
+<?php
+  static $int = 0;         // Allowed 
+  static $int = 1+2;       // Disallowed (will produce a Parse error)
+  static $int = sqrt(144); // Disallowed
+?> 
